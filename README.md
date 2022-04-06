@@ -1,8 +1,6 @@
-# symmetryc-encyption-example        
----     
+# symmetryc-encyption-example            
 > Why didn't the axis use this instead?      
-## Building       
----      
+## Building             
 `
 ...
 cd symetric-encryption-example     
