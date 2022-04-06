@@ -5,6 +5,6 @@
 ```shell
 $ cd symetric-encryption-example  
 $ yarn run build  
-$ node build/index.js "example" 
+$ node build/index.js "Hey Mexico, wanna attack USA?" 
 ```
 
