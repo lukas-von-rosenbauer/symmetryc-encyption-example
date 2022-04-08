@@ -1,3 +1,5 @@
+import { writeFileSync } from "fs";
+
 const encryptMessage = require("./encrypt");
 const decryptMessage = require("./decrypt");
 
@@ -6,7 +8,9 @@ const app = async () => {
 
   if (args.length === 0) console.error("Please specify atleast 1 argument");
   else if (args.length === 1) {
-    console.log(await encryptMessage(args[0]));
+    const enc = await encryptMessage(args[0]);
+    console.log(enc);
+    writeFileSync("secret.txt", enc.message);
   } else if (args.length === 2) {
     console.log(await decryptMessage(args[0], args[1]));
   } else console.error("Too many arguments");
